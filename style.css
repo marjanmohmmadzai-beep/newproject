@@ -1,0 +1,1016 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #374151;
+}
+
+
+/* =========================
+   TOP BACKGROUND
+========================= */
+
+.login-background {
+    height: 370px;
+
+    background-image: url("img.1.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    border-radius: 10px;
+    margin: 5px 10px 0 10px;
+}
+
+
+/* =========================
+   WELCOME TEXT
+========================= */
+
+.welcome-text {
+    position: absolute;
+
+    top: 85px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    color: white;
+
+    width: 100%;
+}
+
+.welcome-text h1 {
+    font-size: 38px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.welcome-text p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+    width: 375px;
+
+    background: white;
+
+    padding: 28px 20px 30px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    margin: -185px auto 0;
+
+    z-index: 10;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   LOGIN TITLE
+========================= */
+
+.login-box h2 {
+    text-align: center;
+
+    font-size: 20px;
+
+    color: #374151;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+}
+
+.social-buttons button {
+    width: 55px;
+    height: 45px;
+
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Facebook */
+
+.social-buttons button:first-child i {
+    color: #1877f2;
+}
+
+
+/* Google */
+
+.social-buttons button:last-child i {
+    color: #4285f4;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+
+    width: 100%;
+
+    height: 42px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 7px;
+
+    padding: 0 12px;
+
+    margin-bottom: 12px;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+
+    border-color: #b000ff;
+}
+
+
+/* =========================
+   SIGN IN BUTTON
+========================= */
+
+.signin-btn {
+
+    width: 100%;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        90deg,
+        #e5009d,
+        #a500ff
+    );
+}
+
+
+/* =========================
+   LOGIN OPTIONS
+========================= */
+
+.login-options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 10px;
+
+    font-size: 11px;
+
+    color: #888888;
+}
+
+.login-options a {
+
+    color: #888888;
+
+    text-decoration: none;
+}
+
+.login-options label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.login-options input[type="checkbox"] {
+
+    width: 14px;
+    height: 14px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   OR
+========================= */
+
+.or {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 20px 0;
+
+    color: #999999;
+
+    font-size: 13px;
+}
+
+.or::before,
+.or::after {
+
+    content: "";
+
+    height: 1px;
+
+    background: #eeeeee;
+
+    flex: 1;
+
+    margin: 0 12px;
+}
+
+
+/* =========================
+   SIGN UP BUTTON
+========================= */
+
+.signup-btn {
+
+    width: 100%;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        90deg,
+        #22c4e8,
+        #2868ee
+    );
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.login-footer {
+
+    min-height: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 35px;
+
+    background: white;
+
+    padding: 20px;
+
+    margin-top: 25px;
+}
+
+.login-footer a {
+
+    color: #8b95a5;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .login-background {
+        height: 350px;
+
+        margin: 5px;
+    }
+
+    .welcome-text h1 {
+        font-size: 28px;
+    }
+
+    .login-box {
+        width: calc(100% - 30px);
+
+        margin-top: -160px;
+    }
+
+    .login-footer {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+}
+
+/* =====================================
+   DASHBOARD
+===================================== */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f6f8;
+}
+
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #eeeeee;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+/* Logo */
+
+.logo {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 35px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo img {
+    width: 135px;
+    height: auto;
+}
+
+
+/* Menu */
+
+.menu {
+    padding: 15px 25px;
+
+    overflow-y: auto;
+}
+
+.menu-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    height: 48px;
+
+    padding: 0 15px;
+
+    margin-bottom: 8px;
+
+    color: #697386;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+
+}
+.meun-item:host-context
+.menu-item i {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f6f8;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+}
+
+.menu-item:hover {
+    background: #f7f7f9;
+}
+
+
+/* Active Dashboard */
+
+.menu-item.active {
+    background: white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    color: #414b5b;
+
+    font-weight: bold;
+}
+
+.menu-item.active i {
+    background: linear-gradient(
+        135deg,
+        #d600a9,
+        #a000ff
+    );
+
+    color: white;
+}
+
+
+/* Question box */
+
+.help-box {
+    margin-top: auto;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+
+    height: 65px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #d900a9,
+        #b400e8
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 15px;
+}
+
+.question {
+    width: 32px;
+    height: 32px;
+
+    background: white;
+
+    color: #b000b8;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.main-content {
+    margin-left: 250px;
+
+    width: calc(100% - 250px);
+
+    min-height: 100vh;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+    height: 105px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 35px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* Header left */
+
+.header-left {
+    min-width: 150px;
+}
+
+.breadcrumb {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+
+    color: #7c8494;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.breadcrumb i {
+    font-size: 11px;
+}
+
+.header-left h2 {
+    font-size: 15px;
+
+    color: #354052;
+}
+
+
+/* Menu button */
+
+.menu-button {
+    border: none;
+
+    background: transparent;
+
+    color: #7c8494;
+
+    font-size: 19px;
+
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+
+
+/* Header right */
+
+.header-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    color: #344054;
+
+    font-size: 13px;
+}
+
+
+/* Search */
+
+.search-box {
+    width: 190px;
+    height: 38px;
+
+    border: 1px solid #e0e3e8;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 12px;
+
+    color: #6b7280;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding-left: 10px;
+
+    font-size: 12px;
+}
+
+
+/* Logout */
+
+.logout {
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.content {
+    padding: 25px 30px;
+}
+
+.content > h1 {
+    font-size: 24px;
+
+    color: #354052;
+
+    margin-bottom: 28px;
+}
+
+
+/* =====================================
+   CARDS
+===================================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    min-height: 350px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+
+/* Card title */
+
+.card-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.card-title h3 {
+    font-size: 15px;
+
+    color: #465365;
+}
+
+.info {
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid #d8dce2;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #89919d;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   CHART AREA
+===================================== */
+
+.chart-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+/* Donut */
+
+.donut {
+    width: 175px;
+    height: 175px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+.donut::after {
+    content: "";
+
+    position: absolute;
+
+    width: 105px;
+    height: 105px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    top: 35px;
+    left: 35px;
+}
+
+
+/* Clinic */
+
+.clinic-donut {
+    background: conic-gradient(
+        #ec008c 0 32%,
+        #2864e8 32% 40%,
+        #f5c735 40% 52%,
+        #19b54a 52% 88%,
+        #424b87 88% 100%
+    );
+}
+
+
+/* Pharmacy */
+
+.pharmacy-donut {
+    background: conic-gradient(
+        #2864e8 0 28%,
+        #aebbd5 28% 50%,
+        #e90088 50% 60%,
+        #1db34a 60% 75%,
+        #424878 75% 100%
+    );
+}
+
+
+/* Market */
+
+.market-donut {
+    background: conic-gradient(
+        #424878 0 25%,
+        #aebbd5 25% 55%,
+        #20b64d 55% 70%,
+        #eeeeee 70% 100%
+    );
+}
+
+
+/* =====================================
+   PERCENT LIST
+===================================== */
+
+.percent-list {
+    flex: 1;
+}
+
+.percent-list p {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eeeeee;
+
+    font-size: 12px;
+
+    color: #5e6878;
+}
+
+.percent-list b {
+    color: #737b88;
+
+    white-space: nowrap;
+}
+
+
+/* Details */
+
+.details-btn {
+    margin-top: 15px;
+
+    margin-left: 45px;
+
+    width: 145px;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        #a9bddc,
+        #8299bd
+    );
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   HEALTH INDEX
+===================================== */
+
+.health-card strong {
+    display: block;
+
+    font-size: 23px;
+
+    color: #354052;
+
+    margin-top: 5px;
+}
+
+.health-card small {
+    font-size: 11px;
+
+    color: #75bd38;
+}
+
+
+/* Health line */
+
+.health-line {
+    height: 160px;
+
+    margin-top: 30px;
+
+    border-bottom: 3px solid #68718a;
+
+    border-radius: 50%;
+
+    transform: skewY(-3deg);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    min-height: 70px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 35px;
+
+    color: #8a94a5;
+
+    font-size: 13px;
+}
+
+footer a {
+    color: #7d8797;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+    .main-content {
+        margin-left: 210px;
+
+        width: calc(100% - 210px);
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 140px;
+    }
+}
